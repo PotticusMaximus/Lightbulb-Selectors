@@ -1,12 +1,24 @@
 let subtitle = document.querySelector("#subtitle");
-const light1 = document.querySelector("lightbulb1");
-const light2 = document.querySelector("lightbulb2");
-const light3 = document.querySelector("lightbulb3");
+const lightbulb1 = document.querySelector("#lightbulb1");
+const lightbulb2 = document.querySelector("#lightbulb2");
+const lightbulb3 = document.querySelector("#lightbulb3");
 
 let count = 0;
 
-light1.addEventListener("click", function (event) {
-  light1.classlist.toggle("active");
+lightbulb1.addEventListener("click", function (event) {
+  lightbulb1.classList.toggle("active");
+  count += 1;
+  console.log(count);
+});
+
+lightbulb2.addEventListener("click", function (event) {
+  lightbulb2.classList.toggle("active");
+  count += 1;
+  console.log(count);
+});
+
+lightbulb3.addEventListener("click", function (event) {
+  lightbulb3.classList.toggle("active");
   count += 1;
   console.log(count);
 });
